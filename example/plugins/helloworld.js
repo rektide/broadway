@@ -3,7 +3,7 @@
     // `exports.attach` gets called by broadway on `app.use`
     attach: function (options) {
       this.hello = function (world) {
-        console.log("Hello "+ world + options.delimiter || ".");
+        exports.document.write("Hello "+ world + options.delimiter || ".");
       }
     },
     // `exports.init` gets called by broadway on `app.init`.
